@@ -564,7 +564,7 @@ a:hover {
 .hero__title {
   color: #FFFFFF;
   font-weight: 800;
-  font-size: clamp(35px, 6.05vw, 116px);
+  font-size: clamp(37px, 6.05vw, 116px);
   line-height: .88;
   letter-spacing: -.045em;
   text-wrap: balance;
