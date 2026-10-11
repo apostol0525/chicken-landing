@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHICKEN — кафе паназиатской кухни в Алмалыке</title>
+  <meta name="description"
+    content="Первое в городе кафе паназиатской кухни. Тёплый зал, мягкие диваны, кухня Кореи, Японии и Таиланда. Алмалык, ул. Фурката 1. Ежедневно 9:00–22:00. Бронь столика.">
+
+  <link rel="icon" href="img/logo.png" type="image/png">
+
+  <!-- Карточка ссылки в Telegram, WhatsApp и соцсетях.
+       ВАЖНО: og:url и og:image должны быть абсолютными — заменить
+       https://example.uz на реальный домен, иначе превью не соберётся. -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="CHICKEN Asian Food">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="CHICKEN — паназиатская кухня в Алмалыке">
+  <meta property="og:description"
+    content="Корейская курочка, роллы, кукси и том ям. Тёплый зал на Фурката 1, ежедневно 9:00–22:00. Забронируйте столик.">
+  <meta property="og:url" content="https://example.uz/">
+  <meta property="og:image" content="https://example.uz/img/hero/hall-wide.jpg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1072">
+  <meta property="og:image:alt" content="Зал кафе CHICKEN в Алмалыке">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Onest:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============ ХЕДЕР ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#top" aria-label="CHICKEN — на главную">
+        <img src="img/logo.png" alt="CHICKEN Asian Food" width="160" height="160">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a class="nav__link" href="#about">Атмосфера</a>
+        <a class="nav__link" href="#menu">Меню</a>
+        <a class="nav__link" href="#book">Бронь</a>
+        <a class="nav__link" href="#delivery">Доставка</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__tel" href="tel:+998996974512">+998 99 697 45 12</a>
+        <a class="btn btn--solid btn--sm" href="#book">Забронировать</a>
+
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false"
+          aria-controls="nav">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ ПЕРВЫЙ ЭКРАН ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="img/hero/hall-wide.jpg" alt="" width="1920" height="1072">
+        <div class="hero__scrim"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <span class="mark mark--light" aria-hidden="true"><i></i><i></i></span>
+          <span class="eyebrow eyebrow--light">Алмалык · район Радуга · с 2022 года</span>
+          <h1 class="hero__title">Первое в городе кафе паназиатской кухни</h1>
+          <p class="hero__lead">Тёплый свет, мягкие диваны и кухня трёх стран в одном зале. Сюда приходят компанией,
+            поэтому столик лучше занять заранее.</p>
+          <div class="hero__buttons">
+            <a class="btn btn--solid" href="#book">Забронировать столик</a>
+            <a class="btn btn--light" href="#menu">Посмотреть меню</a>
+          </div>
+          <p class="hero__note">Ежедневно 9:00 — 22:00 · последний заказ в 21:45</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ОРАНЖЕВАЯ ЛЕНТА ============ -->
+    <section class="ticker" aria-label="Что готовим">
+      <div class="ticker__track">
+        <ul class="ticker__list">
+          <li class="ticker__item">Корейская курочка</li>
+          <li class="ticker__item">Роллы</li>
+          <li class="ticker__item">Кукси</li>
+          <li class="ticker__item">Пегодя</li>
+          <li class="ticker__item">Том Ям</li>
+          <li class="ticker__item">Боксы</li>
+          <li class="ticker__item">Доставка по Алмалыку</li>
+        </ul>
+
+        <ul class="ticker__list" aria-hidden="true">
+          <li class="ticker__item">Корейская курочка</li>
+          <li class="ticker__item">Роллы</li>
+          <li class="ticker__item">Кукси</li>
+          <li class="ticker__item">Пегодя</li>
+          <li class="ticker__item">Том Ям</li>
+          <li class="ticker__item">Боксы</li>
+          <li class="ticker__item">Доставка по Алмалыку</li>
+        </ul>
+
+        <ul class="ticker__list" aria-hidden="true">
+          <li class="ticker__item">Корейская курочка</li>
+          <li class="ticker__item">Роллы</li>
+          <li class="ticker__item">Кукси</li>
+          <li class="ticker__item">Пегодя</li>
+          <li class="ticker__item">Том Ям</li>
+          <li class="ticker__item">Боксы</li>
+          <li class="ticker__item">Доставка по Алмалыку</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ФАКТЫ ============ -->
+    <section class="facts">
+      <div class="container facts__grid">
+        <div class="facts__item">
+          <span class="facts__value">9:00 — 22:00</span>
+          <span class="facts__label">Ежедневно, без выходных</span>
+        </div>
+        <div class="facts__item">
+          <span class="facts__value facts__value--accent">4,9 из 5</span>
+          <span class="facts__label">200 оценок в Яндекс Картах</span>
+        </div>
+        <div class="facts__item">
+          <span class="facts__value">3 кухни</span>
+          <span class="facts__label">Корея · Япония · Таиланд</span>
+        </div>
+        <div class="facts__item">
+          <span class="facts__value">с 2022</span>
+          <span class="facts__label">Район Радуга, ул. Фурката 1</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ АТМОСФЕРА ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__text reveal">
+          <span class="mark" aria-hidden="true"><i></i><i></i></span>
+          <h2 class="section__title">CHICKEN — это не только про еду</h2>
+          <p>Светлый зал с панорамными окнами днём и тёплый приглушённый свет вечером. Мягкие диваны, большие столы,
+            место, где компания из пяти человек помещается без тесноты.</p>
+          <p>Мы в районе Радуга, по дороге в сторону ГорГаза, напротив супермаркета «Теген». Количество мест
+            ограничено — в выходные столик разбирают быстро.</p>
+          <ul class="chips">
+            <li class="chip">Бронь столика</li>
+            <li class="chip">Большие компании</li>
+            <li class="chip">Вынос</li>
+            <li class="chip">Парковка</li>
+            <li class="chip">Халяль</li>
+          </ul>
+          <a class="btn btn--solid" href="#book">Забронировать столик</a>
+        </div>
+
+        <div class="slider reveal" id="aboutSlider">
+          <div class="slider__frame">
+            <figure class="slider__slide is-active" aria-hidden="false">
+              <img src="img/about/guests.jpg" alt="Гости за столом в зале CHICKEN" width="1400" height="933"
+                loading="lazy">
+              <figcaption class="slider__caption">Столы для компаний</figcaption>
+            </figure>
+            <figure class="slider__slide" aria-hidden="true">
+              <img src="img/about/hall.jpg" alt="Зал кафе с панорамными окнами" width="1400" height="933"
+                loading="lazy">
+              <figcaption class="slider__caption">Светлый зал с панорамными окнами</figcaption>
+            </figure>
+            <figure class="slider__slide" aria-hidden="true">
+              <img src="img/about/logo-wall.jpg" alt="Диваны у стены с логотипом CHICKEN" width="1400" height="933"
+                loading="lazy">
+              <figcaption class="slider__caption">Мягкие диваны у фирменной стены</figcaption>
+            </figure>
+            <figure class="slider__slide" aria-hidden="true">
+              <img src="img/about/table.jpg" alt="Накрытый стол с блюдами" width="1400" height="933" loading="lazy">
+              <figcaption class="slider__caption">Подача на компанию</figcaption>
+            </figure>
+            <figure class="slider__slide" aria-hidden="true">
+              <img src="img/about/team.jpg" alt="Команда кафе CHICKEN в зале" width="680" height="453" loading="lazy">
+              <figcaption class="slider__caption">Команда, которая вас встретит</figcaption>
+            </figure>
+          </div>
+          <div class="slider__dots" aria-label="Переключение фотографий">
+            <button class="slider__dot is-active" type="button" aria-current="true"
+              aria-label="Фото 1: столы для компаний"></button>
+            <button class="slider__dot" type="button" aria-current="false"
+              aria-label="Фото 2: светлый зал с панорамными окнами"></button>
+            <button class="slider__dot" type="button" aria-current="false"
+              aria-label="Фото 3: мягкие диваны у фирменной стены"></button>
+            <button class="slider__dot" type="button" aria-current="false"
+              aria-label="Фото 4: подача на компанию"></button>
+            <button class="slider__dot" type="button" aria-current="false"
+              aria-label="Фото 5: команда кафе"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЛЕНТА ФОТО ============ -->
+    <section class="gallery" aria-label="Фотографии блюд">
+      <ul class="gallery__grid">
+        <li class="gallery__item">
+          <img src="img/food/wings.jpg" alt="Острые куриные крылья в соусе с кунжутом" width="1200" height="670"
+            loading="lazy">
+        </li>
+        <li class="gallery__item">
+          <img src="img/food/rolls-fried.jpg" alt="Жареные роллы с кунжутом" width="1200" height="670"
+            loading="lazy" style="object-position: center 78%">
+        </li>
+        <li class="gallery__item">
+          <img src="img/food/sushi-plate.jpg" alt="Суши и гунканы на тарелке" width="1200" height="670" loading="lazy">
+        </li>
+        <li class="gallery__item">
+          <img src="img/food/nuggets.jpg" alt="Куриные стрипсы с соусами" width="1200" height="670"
+            loading="lazy" style="object-position: center 72%">
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ МЕНЮ ============ -->
+    <section class="section section--soft" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <span class="mark" aria-hidden="true"><i></i><i></i></span>
+            <h2 class="section__title">Что у нас готовят</h2>
+          </div>
+          <a class="link-arrow" href="https://chicken-almalyk.uz" target="_blank" rel="noopener">Полное меню с ценами
+            →</a>
+        </div>
+
+        <div class="grid grid--cats">
+          <article class="cat card reveal">
+            <div class="cat__photo">
+              <img src="img/menu/chicken.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <h3 class="cat__title">Чикен</h3>
+            <p class="cat__text">Фирменная корейская курочка — то, с чего начинался CHICKEN.</p>
+          </article>
+
+          <article class="cat card reveal">
+            <div class="cat__photo cat__photo--slide">
+              <img src="img/menu/rolls.png" alt="" width="350" height="345" loading="lazy">
+              <img class="cat__photo-2" src="img/menu/box.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <h3 class="cat__title">Роллы</h3>
+            <p class="cat__text">Поштучно и сетами — собираем на месте под заказ.</p>
+          </article>
+
+          <article class="cat card reveal">
+            <div class="cat__photo cat__photo--slide">
+              <img src="img/menu/tomyam.png" alt="" width="350" height="345" loading="lazy">
+              <img class="cat__photo-2" src="img/menu/kuksi.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <h3 class="cat__title">Супы</h3>
+            <p class="cat__text">Острый Том Ям и холодные кукси.</p>
+          </article>
+
+          <article class="cat card reveal">
+            <div class="cat__photo">
+              <img src="img/menu/tori-teriyaki.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <h3 class="cat__title">Горячие блюда</h3>
+            <p class="cat__text">Тори терияки, пибимпаб, чумулек и другое горячее с гарниром.</p>
+          </article>
+
+          <article class="cat card reveal">
+            <div class="cat__photo">
+              <img src="img/menu/salads.png" alt="" width="349" height="344" loading="lazy">
+            </div>
+            <h3 class="cat__title">Салаты</h3>
+            <p class="cat__text">Свежие салаты к основному блюду.</p>
+          </article>
+
+          <article class="cat card reveal">
+            <div class="cat__photo">
+              <img src="img/menu/pegodya.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <h3 class="cat__title">Закуски</h3>
+            <p class="cat__text">Пегодя и лёгкие закуски к столу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ХИТЫ ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head section__head--column reveal">
+          <span class="mark" aria-hidden="true"><i></i><i></i></span>
+          <h2 class="section__title">Что берут чаще всего</h2>
+          <p class="section__lead">Если идёте впервые — начните с этого.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="dish card reveal">
+            <div class="dish__photo">
+              <img src="img/menu/chicken-signature.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Голден Чикен</h3>
+              <p class="dish__text">Куриное мясо во фритюре в хрустящем кляре. Порция 0,5 или 1 кг.</p>
+              <div class="dish__foot">
+                <span class="dish__price">от 50 000 сум</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish card reveal">
+            <div class="dish__photo">
+              <img src="img/menu/rolls-set.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Сеты роллов</h3>
+              <p class="dish__text">Пять готовых сетов — от 24 до 40 штук на компанию.</p>
+              <div class="dish__foot">
+                <span class="dish__price">от 200 000 сум</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish card reveal">
+            <div class="dish__photo">
+              <img src="img/menu/kuksi.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Кукси</h3>
+              <p class="dish__text">Холодный суп с лапшой, острыми салатами и ледяным бульоном. 0,7 л.</p>
+              <div class="dish__foot">
+                <span class="dish__price">39 000 сум</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish card reveal">
+            <div class="dish__photo">
+              <img src="img/menu/pegodya.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Пегодя</h3>
+              <p class="dish__text">Корейский пирожок с мясом и овощами, запечённый в тесте. 1 шт.</p>
+              <div class="dish__foot">
+                <span class="dish__price">19 000 сум</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish card reveal">
+            <div class="dish__photo">
+              <img src="img/menu/tomyam.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Том Ям</h3>
+              <p class="dish__text">Острый суп с креветками и лососем, паста том ям и морская капуста.</p>
+              <div class="dish__foot">
+                <span class="dish__price">78 000 сум</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish card reveal">
+            <div class="dish__photo">
+              <img src="img/menu/tori-teriyaki.png" alt="" width="350" height="345" loading="lazy">
+            </div>
+            <div class="dish__body">
+              <h3 class="dish__title">Тори терияки</h3>
+              <p class="dish__text">Куриные кусочки, обжаренные в соусе терияки, с паровым рисом.</p>
+              <div class="dish__foot">
+                <span class="dish__price">48 000 сум</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ БРОНЬ СТОЛИКА ============ -->
+    <section class="section section--soft" id="book">
+      <div class="container book">
+        <div class="book__text reveal">
+          <span class="mark" aria-hidden="true"><i></i><i></i></span>
+          <h2 class="section__title">Забронировать столик</h2>
+          <p class="book__lead">Количество мест ограничено. В выходные и вечером зал заполняется — лучше предупредить
+            заранее, мы придержим стол.</p>
+          <dl class="info">
+            <div class="info__row">
+              <dt class="info__label">Или просто позвоните</dt>
+              <dd class="info__value"><a class="info__tel" href="tel:+998996974512">+998 99 697 45 12</a></dd>
+            </div>
+          </dl>
+          <p class="book__note">Ежедневно с 9:00 до 22:00</p>
+        </div>
+
+        <form class="book__form reveal" id="bookForm">
+          <div class="field">
+            <label class="field__label" for="bookName">Ваше имя</label>
+            <input class="field__input" id="bookName" name="name" type="text" required autocomplete="name"
+              placeholder="Как к вам обращаться">
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="bookPhone">Телефон</label>
+            <input class="field__input" id="bookPhone" name="phone" type="tel" required autocomplete="tel"
+              placeholder="+998 ..">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label class="field__label" for="bookDate">Дата</label>
+              <input class="field__input" id="bookDate" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label class="field__label" for="bookTime">Время</label>
+              <input class="field__input" id="bookTime" name="time" type="time" required min="09:00" max="22:00"
+                value="19:00">
+            </div>
+            <div class="field">
+              <label class="field__label" for="bookGuests">Гостей</label>
+              <input class="field__input" id="bookGuests" name="guests" type="number" required min="1" max="30"
+                value="2">
+            </div>
+          </div>
+
+          <button class="btn btn--solid book__submit" type="submit">Отправить заявку в Telegram</button>
+          <p class="book__hint">Заявка откроется в Telegram готовым сообщением — останется нажать «Отправить».</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ ДОСТАВКА ============ -->
+    <section class="section" id="delivery">
+      <div class="container">
+        <div class="section__head section__head--column reveal">
+          <span class="mark" aria-hidden="true"><i></i><i></i></span>
+          <h2 class="section__title">Не получается зайти?<br>Привезём</h2>
+          <p class="section__lead">Полное меню с ценами, корзина и оплата — на сайте доставки и в Telegram-боте.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Открываете меню</h3>
+            <p class="step__text">На сайте доставки или в Telegram-боте — там актуальные цены и составы.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Собираете заказ</h3>
+            <p class="step__text">Выбираете доставку или самовывоз, указываете адрес и удобное время.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Получаете горячим</h3>
+            <p class="step__text">По Алмалыку бесплатно от 100 000 сум. Самовывоз по адресу на Фурката 1.</p>
+          </li>
+        </ol>
+
+        <div class="cta reveal">
+          <div class="cta__text">
+            <span class="cta__title">Бесплатная доставка от 100 000 сум</span>
+            <span class="cta__sub">Принимаем заказы с 9:00 до 21:45</span>
+          </div>
+          <div class="cta__buttons">
+            <a class="btn btn--solid" href="https://chicken-almalyk.uz" target="_blank" rel="noopener">Сайт доставки</a>
+            <a class="btn btn--ghost" href="https://t.me/chickenalmalyk_bot" target="_blank"
+              rel="noopener">Telegram-бот</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ КОНТАКТЫ ============ -->
+    <section class="section section--soft" id="contacts">
+      <div class="container contacts">
+        <div class="contacts__info reveal">
+          <span class="mark" aria-hidden="true"><i></i><i></i></span>
+          <h2 class="section__title">Где нас найти</h2>
+
+          <dl class="info">
+            <div class="info__row">
+              <dt class="info__label">Адрес</dt>
+              <dd class="info__value">г. Алмалык, р-н Радуга, ул. Фурката 1 — напротив магазина «Теген»</dd>
+            </div>
+            <div class="info__row">
+              <dt class="info__label">Время работы</dt>
+              <dd class="info__value">Ежедневно 9:00 — 22:00</dd>
+            </div>
+            <div class="info__row">
+              <dt class="info__label">Телефон</dt>
+              <dd class="info__value"><a class="info__tel" href="tel:+998996974512">+998 99 697 45 12</a></dd>
+            </div>
+          </dl>
+
+          <span class="info__label">Соцсети</span>
+          <ul class="chips">
+            <li><a class="chip chip--link" href="https://t.me/chicken_almalyk" target="_blank"
+                rel="noopener">Telegram-канал</a></li>
+            <li><a class="chip chip--link" href="https://instagram.com/chicken.almalyk" target="_blank"
+                rel="noopener">Instagram</a></li>
+            <li><a class="chip chip--link" href="https://chicken-almalyk.uz" target="_blank" rel="noopener">Сайт
+                доставки</a></li>
+          </ul>
+        </div>
+
+        <div class="map-wrap reveal">
+          <div class="map">
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?ll=69.598567%2C40.852549&amp;z=17&amp;mode=search&amp;oid=216741420573&amp;ol=biz"
+              title="CHICKEN на карте: Алмалык, улица Фурката, 1" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ ПОДВАЛ ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img class="footer__logo" src="img/logo.png" alt="CHICKEN Asian Food" width="160" height="160">
+      <nav class="footer__nav" aria-label="Меню в подвале">
+        <a href="#about">Атмосфера</a>
+        <a href="#menu">Меню</a>
+        <a href="#book">Бронь</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <span class="footer__copy">© 2026 CHICKEN Asian Food · Алмалык</span>
+    </div>
+    <div class="footer__bar"></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
